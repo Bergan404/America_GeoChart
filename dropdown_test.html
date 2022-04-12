@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gas Misery Dropdown</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 70px 0;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .menu,
+        .content {
+            width: 100%;
+        }
+        select {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            border: 2px solid black;
+            appearance: none;
+        }
+        .content {
+            margin: 30px 0;
+        }
+        .content .data {
+            padding: 25px;
+            border: 2px solid black;
+        }
+
+        .data {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="menu">
+            <select id="name">
+                <option value="florida">Florida</option>
+                <option value="tennesse">Tennesse</option>
+                <option value="alabama">Alabama</option>
+                <option value="california">California</option>
+                <option value="ohio">Ohio</option>
+            </select>
+        </div>
+
+        <div class="content">
+            <div id="florida" class="data">
+                <p><b>name</b><span>Florida</span></p>
+                <p><b>gas</b><span>$1000</span></p>
+                <p><b>gas again</b><span>$56</span></p>
+            </div>
+            <div id="tennesse" class="data">
+                <p><b>name</b><span>Tennesse</span></p>
+                <p><b>gas</b><span>$1000</span></p>
+                <p><b>gas again</b><span>$56</span></p>
+            </div>
+            <div id="alabama" class="data">
+                <p><b>name</b><span>Alabama</span></p>
+                <p><b>gas</b><span>$1000</span></p>
+                <p><b>gas again</b><span>$56</span></p>
+            </div>
+            <div id="california" class="data">
+                <p><b>name</b><span>California</span></p>
+                <p><b>gas</b><span>$1000</span></p>
+                <p><b>gas again</b><span>$56</span></p>
+            </div>
+            <div id="ohio" class="data">
+                <p><b>name</b><span>Ohio</span></p>
+                <p><b>gas</b><span>$1000</span></p>
+                <p><b>gas again</b><span>$56</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#name").on('change', function () {
+                $(".data").hide();
+                $("#" + $(this).val()).fadeIn(700);
+            }).change();
+        });
+    </script>
+
+</body>
+
+</html>
