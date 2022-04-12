@@ -15,16 +15,11 @@
             outline: none;
         }
 
-        body {
-            font-family: 'Courier New', Courier, monospace;
-        }
-
         .wrapper {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             padding: 70px 0;
-            max-width: 400px;
             margin: 0 auto;
         }
 
@@ -48,13 +43,61 @@
             margin: 30px 0;
         }
 
+
         .content .data {
             padding: 25px;
-            border: 2px solid black;
+        }
+
+        .content-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-gap: 10px;
+            grid-auto-flow: column;
+            height: 150px;
+            margin: 0 20px 0 40px;
+        }
+
+        .content-right p {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #376927;
+            padding: 20px;
+
+        }
+        .content-right b {
+            font-weight: normal;
+            font-size: 10px;
+            color: gray;
         }
 
         .data {
             display: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-misery {
+            display: flex;
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            color: #376927;
+            margin: 0 20px 0 20px;
+        }
+        .content-misery b {
+            font-size: 20px;
+            color: #65a84f;
         }
     </style>
 </head>
@@ -119,354 +162,454 @@
 
         <div class="content">
             <div id="alabama" class="data">
-                <p><b>MISERY INDEX</b><span>$867.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.65</span></p>
-                <p><b>LAST MONTH</b><span>$3.98</span></p>
-                <p><b>LAST WEEK</b><span>$3.98</span></p>
-                <p><b>TODAY</b><span>$3.90</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$867.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.65</span></p>
+                    <p><b>LAST MONTH</b><span>$3.98</span></p>
+                    <p><b>LAST WEEK</b><span>$3.98</span></p>
+                    <p><b>TODAY</b><span>$3.90</span></p>
+                </div>
             </div>
             <div id="alaska" class="data">
-                <p><b>MISERY INDEX</b><span>$674.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.14</span></p>
-                <p><b>LAST MONTH</b><span>$4.50</span></p>
-                <p><b>LAST WEEK</b><span>$4.74</span></p>
-                <p><b>TODAY</b><span>$4.70</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$674.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.14</span></p>
+                    <p><b>LAST MONTH</b><span>$4.50</span></p>
+                    <p><b>LAST WEEK</b><span>$4.74</span></p>
+                    <p><b>TODAY</b><span>$4.70</span></p>
+                </div>
             </div>
             <div id="arizona" class="data">
-                <p><b>MISERY INDEX</b><span>$784.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.08</span></p>
-                <p><b>LAST MONTH</b><span>$4.29</span></p>
-                <p><b>LAST WEEK</b><span>$4.67</span></p>
-                <p><b>TODAY</b><span>$4.62</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$784.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.08</span></p>
+                    <p><b>LAST MONTH</b><span>$4.29</span></p>
+                    <p><b>LAST WEEK</b><span>$4.67</span></p>
+                    <p><b>TODAY</b><span>$4.62</span></p>
+                </div>
             </div>
             <div id="arkansas" class="data">
-                <p><b>MISERY INDEX</b><span>$710.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.68</span></p>
-                <p><b>LAST MONTH</b><span>$3.77</span></p>
-                <p><b>LAST WEEK</b><span>$3.80</span></p>
-                <p><b>TODAY</b><span>$3.74</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$710.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.68</span></p>
+                    <p><b>LAST MONTH</b><span>$3.77</span></p>
+                    <p><b>LAST WEEK</b><span>$3.80</span></p>
+                    <p><b>TODAY</b><span>$3.74</span></p>
+                </div>
             </div>
             <div id="california" class="data">
-                <p><b>MISERY INDEX</b><span>$906.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.93</span></p>
-                <p><b>LAST MONTH</b><span>$5.44</span></p>
-                <p><b>LAST WEEK</b><span>$5.88</span></p>
-                <p><b>TODAY</b><span>$5.79</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$906.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.93</span></p>
+                    <p><b>LAST MONTH</b><span>$5.44</span></p>
+                    <p><b>LAST WEEK</b><span>$5.88</span></p>
+                    <p><b>TODAY</b><span>$5.79</span></p>
+                </div>
             </div>
             <div id="colorado" class="data">
-                <p><b>MISERY INDEX</b><span>$527.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.91</span></p>
-                <p><b>LAST MONTH</b><span>$3.84</span></p>
-                <p><b>LAST WEEK</b><span>$3.99</span></p>
-                <p><b>TODAY</b><span>$3.96</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$527.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.91</span></p>
+                    <p><b>LAST MONTH</b><span>$3.84</span></p>
+                    <p><b>LAST WEEK</b><span>$3.99</span></p>
+                    <p><b>TODAY</b><span>$3.96</span></p>
+                </div>
             </div>
             <div id="connecticut" class="data">
-                <p><b>MISERY INDEX</b><span>$504.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.89</span></p>
-                <p><b>LAST MONTH</b><span>$4.36</span></p>
-                <p><b>LAST WEEK</b><span>$4.27</span></p>
-                <p><b>TODAY</b><span>$3.96</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$504.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.89</span></p>
+                    <p><b>LAST MONTH</b><span>$4.36</span></p>
+                    <p><b>LAST WEEK</b><span>$4.27</span></p>
+                    <p><b>TODAY</b><span>$3.96</span></p>
+                </div>
             </div>
             <div id="delaware" class="data">
-                <p><b>MISERY INDEX</b><span>$648.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.69</span></p>
-                <p><b>LAST MONTH</b><span>$4.22</span></p>
-                <p><b>LAST WEEK</b><span>$4.07</span></p>
-                <p><b>TODAY</b><span>$4.01</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$648.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.69</span></p>
+                    <p><b>LAST MONTH</b><span>$4.22</span></p>
+                    <p><b>LAST WEEK</b><span>$4.07</span></p>
+                    <p><b>TODAY</b><span>$4.01</span></p>
+                </div>
             </div>
             <div id="florida" class="data">
-                <p><b>MISERY INDEX</b><span>$725.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.83</span></p>
-                <p><b>LAST MONTH</b><span>$4.15</span></p>
-                <p><b>LAST WEEK</b><span>$4.19</span></p>
-                <p><b>TODAY</b><span>$4.11</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$725.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.83</span></p>
+                    <p><b>LAST MONTH</b><span>$4.15</span></p>
+                    <p><b>LAST WEEK</b><span>$4.19</span></p>
+                    <p><b>TODAY</b><span>$4.11</span></p>
+                </div>
             </div>
             <div id="georgia" class="data">
-                <p><b>MISERY INDEX</b><span>$778.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.71</span></p>
-                <p><b>LAST MONTH</b><span>$4.06</span></p>
-                <p><b>LAST WEEK</b><span>$3.90</span></p>
-                <p><b>TODAY</b><span>$3.80</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$778.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.71</span></p>
+                    <p><b>LAST MONTH</b><span>$4.06</span></p>
+                    <p><b>LAST WEEK</b><span>$3.90</span></p>
+                    <p><b>TODAY</b><span>$3.80</span></p>
+                </div>
             </div>
             <div id="hawaii" class="data">
-                <p><b>MISERY INDEX</b><span>$696.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.71</span></p>
-                <p><b>LAST MONTH</b><span>$4.72</span></p>
-                <p><b>LAST WEEK</b><span>$5.21</span></p>
-                <p><b>TODAY</b><span>$5.24</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$696.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.71</span></p>
+                    <p><b>LAST MONTH</b><span>$4.72</span></p>
+                    <p><b>LAST WEEK</b><span>$5.21</span></p>
+                    <p><b>TODAY</b><span>$5.24</span></p>
+                </div>
             </div>
             <div id="idaho" class="data">
-                <p><b>MISERY INDEX</b><span>$757.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.06</span></p>
-                <p><b>LAST MONTH</b><span>$4.06</span></p>
-                <p><b>LAST WEEK</b><span>$4.42</span></p>
-                <p><b>TODAY</b><span>$4.41</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$757.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.06</span></p>
+                    <p><b>LAST MONTH</b><span>$4.06</span></p>
+                    <p><b>LAST WEEK</b><span>$4.42</span></p>
+                    <p><b>TODAY</b><span>$4.41</span></p>
+                </div>
             </div>
             <div id="illinois" class="data">
-                <p><b>MISERY INDEX</b><span>$641.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.07</span></p>
-                <p><b>LAST MONTH</b><span>$4.43</span></p>
-                <p><b>LAST WEEK</b><span>$4.46</span></p>
-                <p><b>TODAY</b><span>$4.38</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$641.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.07</span></p>
+                    <p><b>LAST MONTH</b><span>$4.43</span></p>
+                    <p><b>LAST WEEK</b><span>$4.46</span></p>
+                    <p><b>TODAY</b><span>$4.38</span></p>
+                </div>
             </div>
             <div id="indiana" class="data">
-                <p><b>MISERY INDEX</b><span>$863.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.79</span></p>
-                <p><b>LAST MONTH</b><span>$4.15</span></p>
-                <p><b>LAST WEEK</b><span>$4.13</span></p>
-                <p><b>TODAY</b><span>$4.02</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$863.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.79</span></p>
+                    <p><b>LAST MONTH</b><span>$4.15</span></p>
+                    <p><b>LAST WEEK</b><span>$4.13</span></p>
+                    <p><b>TODAY</b><span>$4.02</span></p>
+                </div>
             </div>
             <div id="iowa" class="data">
-                <p><b>MISERY INDEX</b><span>$602.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.79</span></p>
-                <p><b>LAST MONTH</b><span>$3.82</span></p>
-                <p><b>LAST WEEK</b><span>$3.89</span></p>
-                <p><b>TODAY</b><span>$3.84</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$602.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.79</span></p>
+                    <p><b>LAST MONTH</b><span>$3.82</span></p>
+                    <p><b>LAST WEEK</b><span>$3.89</span></p>
+                    <p><b>TODAY</b><span>$3.84</span></p>
+                </div>
             </div>
             <div id="kansas" class="data">
-                <p><b>MISERY INDEX</b><span>$592.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.69</span></p>
-                <p><b>LAST MONTH</b><span>$3.74</span></p>
-                <p><b>LAST WEEK</b><span>$3.78</span></p>
-                <p><b>TODAY</b><span>$3.72</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$592.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.69</span></p>
+                    <p><b>LAST MONTH</b><span>$3.74</span></p>
+                    <p><b>LAST WEEK</b><span>$3.78</span></p>
+                    <p><b>TODAY</b><span>$3.72</span></p>
+                </div>
             </div>
             <div id="kentucky" class="data">
-                <p><b>MISERY INDEX</b><span>$742.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.72</span></p>
-                <p><b>LAST MONTH</b><span>$3.93</span></p>
-                <p><b>LAST WEEK</b><span>$3.95</span></p>
-                <p><b>TODAY</b><span>$3.89</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$742.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.72</span></p>
+                    <p><b>LAST MONTH</b><span>$3.93</span></p>
+                    <p><b>LAST WEEK</b><span>$3.95</span></p>
+                    <p><b>TODAY</b><span>$3.89</span></p>
+                </div>
             </div>
             <div id="louisiana" class="data">
-                <p><b>MISERY INDEX</b><span>$762.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.62</span></p>
-                <p><b>LAST MONTH</b><span>$3.95</span></p>
-                <p><b>LAST WEEK</b><span>$3.99</span></p>
-                <p><b>TODAY</b><span>$3.93</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$762.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.62</span></p>
+                    <p><b>LAST MONTH</b><span>$3.95</span></p>
+                    <p><b>LAST WEEK</b><span>$3.99</span></p>
+                    <p><b>TODAY</b><span>$3.93</span></p>
+                </div>
             </div>
             <div id="maine" class="data">
-                <p><b>MISERY INDEX</b><span>$730.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.80</span></p>
-                <p><b>LAST MONTH</b><span>$4.19</span></p>
-                <p><b>LAST WEEK</b><span>$4.18</span></p>
-                <p><b>TODAY</b><span>$4.12</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$730.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.80</span></p>
+                    <p><b>LAST MONTH</b><span>$4.19</span></p>
+                    <p><b>LAST WEEK</b><span>$4.18</span></p>
+                    <p><b>TODAY</b><span>$4.12</span></p>
+                </div>
             </div>
             <div id="maryland" class="data">
-                <p><b>MISERY INDEX</b><span>$509.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.78</span></p>
-                <p><b>LAST MONTH</b><span>$4.19</span></p>
-                <p><b>LAST WEEK</b><span>$3.80</span></p>
-                <p><b>TODAY</b><span>$3.75</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$509.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.78</span></p>
+                    <p><b>LAST MONTH</b><span>$4.19</span></p>
+                    <p><b>LAST WEEK</b><span>$3.80</span></p>
+                    <p><b>TODAY</b><span>$3.75</span></p>
+                </div>
             </div>
             <div id="massachusetts" class="data">
-                <p><b>MISERY INDEX</b><span>$719.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.74</span></p>
-                <p><b>LAST MONTH</b><span>$4.24</span></p>
-                <p><b>LAST WEEK</b><span>$4.22</span></p>
-                <p><b>TODAY</b><span>$4.15</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$719.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.74</span></p>
+                    <p><b>LAST MONTH</b><span>$4.24</span></p>
+                    <p><b>LAST WEEK</b><span>$4.22</span></p>
+                    <p><b>TODAY</b><span>$4.15</span></p>
+                </div>
             </div>
             <div id="michigan" class="data">
-                <p><b>MISERY INDEX</b><span>$646.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.81</span></p>
-                <p><b>LAST MONTH</b><span>$4.18</span></p>
-                <p><b>LAST WEEK</b><span>$4.08</span></p>
-                <p><b>TODAY</b><span>$3.97</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$646.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.81</span></p>
+                    <p><b>LAST MONTH</b><span>$4.18</span></p>
+                    <p><b>LAST WEEK</b><span>$4.08</span></p>
+                    <p><b>TODAY</b><span>$3.97</span></p>
+                </div>
             </div>
             <div id="minnesota" class="data">
-                <p><b>MISERY INDEX</b><span>$780.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.74</span></p>
-                <p><b>LAST MONTH</b><span>$3.87</span></p>
-                <p><b>LAST WEEK</b><span>$3.90</span></p>
-                <p><b>TODAY</b><span>$3.86</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$780.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.74</span></p>
+                    <p><b>LAST MONTH</b><span>$3.87</span></p>
+                    <p><b>LAST WEEK</b><span>$3.90</span></p>
+                    <p><b>TODAY</b><span>$3.86</span></p>
+                </div>
             </div>
             <div id="mississippi" class="data">
-                <p><b>MISERY INDEX</b><span>$971.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.59</span></p>
-                <p><b>LAST MONTH</b><span>$3.86</span></p>
-                <p><b>LAST WEEK</b><span>$3.89</span></p>
-                <p><b>TODAY</b><span>$3.84</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$971.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.59</span></p>
+                    <p><b>LAST MONTH</b><span>$3.86</span></p>
+                    <p><b>LAST WEEK</b><span>$3.89</span></p>
+                    <p><b>TODAY</b><span>$3.84</span></p>
+                </div>
             </div>
             <div id="missouri" class="data">
-                <p><b>MISERY INDEX</b><span>$764.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.64</span></p>
-                <p><b>LAST MONTH</b><span>$3.73</span></p>
-                <p><b>LAST WEEK</b><span>$3.76</span></p>
-                <p><b>TODAY</b><span>$3.70</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$764.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.64</span></p>
+                    <p><b>LAST MONTH</b><span>$3.73</span></p>
+                    <p><b>LAST WEEK</b><span>$3.76</span></p>
+                    <p><b>TODAY</b><span>$3.70</span></p>
+                </div>
             </div>
             <div id="montana" class="data">
-                <p><b>MISERY INDEX</b><span>$816.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.73</span></p>
-                <p><b>LAST MONTH</b><span>$3.86</span></p>
-                <p><b>LAST WEEK</b><span>$4.08</span></p>
-                <p><b>TODAY</b><span>$4.05</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$816.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.73</span></p>
+                    <p><b>LAST MONTH</b><span>$3.86</span></p>
+                    <p><b>LAST WEEK</b><span>$4.08</span></p>
+                    <p><b>TODAY</b><span>$4.05</span></p>
+                </div>
             </div>
             <div id="nebraska" class="data">
-                <p><b>MISERY INDEX</b><span>$595.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.79</span></p>
-                <p><b>LAST MONTH</b><span>$3.80</span></p>
-                <p><b>LAST WEEK</b><span>$3.86</span></p>
-                <p><b>TODAY</b><span>$3.82</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$595.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.79</span></p>
+                    <p><b>LAST MONTH</b><span>$3.80</span></p>
+                    <p><b>LAST WEEK</b><span>$3.86</span></p>
+                    <p><b>TODAY</b><span>$3.82</span></p>
+                </div>
             </div>
             <div id="nevada" class="data">
-                <p><b>MISERY INDEX</b><span>$595.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.79</span></p>
-                <p><b>LAST MONTH</b><span>$3.80</span></p>
-                <p><b>LAST WEEK</b><span>$3.86</span></p>
-                <p><b>TODAY</b><span>$3.82</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$595.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.79</span></p>
+                    <p><b>LAST MONTH</b><span>$3.80</span></p>
+                    <p><b>LAST WEEK</b><span>$3.86</span></p>
+                    <p><b>TODAY</b><span>$3.82</span></p>
+                </div>
             </div>
             <div id="newHampshire" class="data">
-                <p><b>MISERY INDEX</b><span>$612.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.71</span></p>
-                <p><b>LAST MONTH</b><span>$4.16</span></p>
-                <p><b>LAST WEEK</b><span>$4.15</span></p>
-                <p><b>TODAY</b><span>$4.07</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$612.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.71</span></p>
+                    <p><b>LAST MONTH</b><span>$4.16</span></p>
+                    <p><b>LAST WEEK</b><span>$4.15</span></p>
+                    <p><b>TODAY</b><span>$4.07</span></p>
+                </div>
             </div>
             <div id="newJersey" class="data">
-                <p><b>MISERY INDEX</b><span>$557.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.91</span></p>
-                <p><b>LAST MONTH</b><span>$4.27</span></p>
-                <p><b>LAST WEEK</b><span>$4.19</span></p>
-                <p><b>TODAY</b><span>$4.12</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$557.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.91</span></p>
+                    <p><b>LAST MONTH</b><span>$4.27</span></p>
+                    <p><b>LAST WEEK</b><span>$4.19</span></p>
+                    <p><b>TODAY</b><span>$4.12</span></p>
+                </div>
             </div>
             <div id="newMexico" class="data">
-                <p><b>MISERY INDEX</b><span>$909.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.87</span></p>
-                <p><b>LAST MONTH</b><span>$4.04</span></p>
-                <p><b>LAST WEEK</b><span>$4.14</span></p>
-                <p><b>TODAY</b><span>$4.09</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$909.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.87</span></p>
+                    <p><b>LAST MONTH</b><span>$4.04</span></p>
+                    <p><b>LAST WEEK</b><span>$4.14</span></p>
+                    <p><b>TODAY</b><span>$4.09</span></p>
+                </div>
             </div>
             <div id="newYork" class="data">
-                <p><b>MISERY INDEX</b><span>$534.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.90</span></p>
-                <p><b>LAST MONTH</b><span>$4.37</span></p>
-                <p><b>LAST WEEK</b><span>$4.32</span></p>
-                <p><b>TODAY</b><span>$4.25</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$534.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.90</span></p>
+                    <p><b>LAST MONTH</b><span>$4.37</span></p>
+                    <p><b>LAST WEEK</b><span>$4.32</span></p>
+                    <p><b>TODAY</b><span>$4.25</span></p>
+                </div>
             </div>
             <div id="northCarolina" class="data">
-                <p><b>MISERY INDEX</b><span>$794.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.63</span></p>
-                <p><b>LAST MONTH</b><span>$4.03</span></p>
-                <p><b>LAST WEEK</b><span>$3.99</span></p>
-                <p><b>TODAY</b><span>$3.90</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$794.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.63</span></p>
+                    <p><b>LAST MONTH</b><span>$4.03</span></p>
+                    <p><b>LAST WEEK</b><span>$3.99</span></p>
+                    <p><b>TODAY</b><span>$3.90</span></p>
+                </div>
             </div>
             <div id="northDakota" class="data">
-                <p><b>MISERY INDEX</b><span>$784.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.75</span></p>
-                <p><b>LAST MONTH</b><span>$3.81</span></p>
-                <p><b>LAST WEEK</b><span>$3.91</span></p>
-                <p><b>TODAY</b><span>$3.89</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$784.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.75</span></p>
+                    <p><b>LAST MONTH</b><span>$3.81</span></p>
+                    <p><b>LAST WEEK</b><span>$3.91</span></p>
+                    <p><b>TODAY</b><span>$3.89</span></p>
+                </div>
             </div>
             <div id="ohio" class="data">
-                <p><b>MISERY INDEX</b><span>$628.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.76</span></p>
-                <p><b>LAST MONTH</b><span>$3.99</span></p>
-                <p><b>LAST WEEK</b><span>$4.00</span></p>
-                <p><b>TODAY</b><span>$3.89</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$628.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.76</span></p>
+                    <p><b>LAST MONTH</b><span>$3.99</span></p>
+                    <p><b>LAST WEEK</b><span>$4.00</span></p>
+                    <p><b>TODAY</b><span>$3.89</span></p>
+                </div>
             </div>
             <div id="oklahoma" class="data">
-                <p><b>MISERY INDEX</b><span>$744.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.64</span></p>
-                <p><b>LAST MONTH</b><span>$3.72</span></p>
-                <p><b>LAST WEEK</b><span>$3.79</span></p>
-                <p><b>TODAY</b><span>$3.72</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$744.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.64</span></p>
+                    <p><b>LAST MONTH</b><span>$3.72</span></p>
+                    <p><b>LAST WEEK</b><span>$3.79</span></p>
+                    <p><b>TODAY</b><span>$3.72</span></p>
+                </div>
             </div>
             <div id="oregon" class="data">
-                <p><b>MISERY INDEX</b><span>$699.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.20</span></p>
-                <p><b>LAST MONTH</b><span>$4.59</span></p>
-                <p><b>LAST WEEK</b><span>$4.70</span></p>
-                <p><b>TODAY</b><span>$4.67</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$699.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.20</span></p>
+                    <p><b>LAST MONTH</b><span>$4.59</span></p>
+                    <p><b>LAST WEEK</b><span>$4.70</span></p>
+                    <p><b>TODAY</b><span>$4.67</span></p>
+                </div>
             </div>
             <div id="pennsylvinia" class="data">
-                <p><b>MISERY INDEX</b><span>$561.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.98</span></p>
-                <p><b>LAST MONTH</b><span>$4.31</span></p>
-                <p><b>LAST WEEK</b><span>$4.30</span></p>
-                <p><b>TODAY</b><span>$4.24</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$561.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.98</span></p>
+                    <p><b>LAST MONTH</b><span>$4.31</span></p>
+                    <p><b>LAST WEEK</b><span>$4.30</span></p>
+                    <p><b>TODAY</b><span>$4.24</span></p>
+                </div>
             </div>
             <div id="rhodeIsland" class="data">
-                <p><b>MISERY INDEX</b><span>$496.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.78</span></p>
-                <p><b>LAST MONTH</b><span>$4.25</span></p>
-                <p><b>LAST WEEK</b><span>$4.16</span></p>
-                <p><b>TODAY</b><span>$4.06</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$496.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.78</span></p>
+                    <p><b>LAST MONTH</b><span>$4.25</span></p>
+                    <p><b>LAST WEEK</b><span>$4.16</span></p>
+                    <p><b>TODAY</b><span>$4.06</span></p>
+                </div>
             </div>
             <div id="southCarolina" class="data">
-                <p><b>MISERY INDEX</b><span>$703.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.59</span></p>
-                <p><b>LAST MONTH</b><span>$3.97</span></p>
-                <p><b>LAST WEEK</b><span>$3.89</span></p>
-                <p><b>TODAY</b><span>$3.80</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$703.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.59</span></p>
+                    <p><b>LAST MONTH</b><span>$3.97</span></p>
+                    <p><b>LAST WEEK</b><span>$3.89</span></p>
+                    <p><b>TODAY</b><span>$3.80</span></p>
+                </div>
             </div>
             <div id="southDakota" class="data">
-                <p><b>MISERY INDEX</b><span>$629.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.84</span></p>
-                <p><b>LAST MONTH</b><span>$3.79</span></p>
-                <p><b>LAST WEEK</b><span>$3.93</span></p>
-                <p><b>TODAY</b><span>$3.88</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$629.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.84</span></p>
+                    <p><b>LAST MONTH</b><span>$3.79</span></p>
+                    <p><b>LAST WEEK</b><span>$3.93</span></p>
+                    <p><b>TODAY</b><span>$3.88</span></p>
+                </div>
             </div>
             <div id="tennessee" class="data">
-                <p><b>MISERY INDEX</b><span>$732.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.69</span></p>
-                <p><b>LAST MONTH</b><span>$3.96</span></p>
-                <p><b>LAST WEEK</b><span>$3.99</span></p>
-                <p><b>TODAY</b><span>$3.92</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$732.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.69</span></p>
+                    <p><b>LAST MONTH</b><span>$3.96</span></p>
+                    <p><b>LAST WEEK</b><span>$3.99</span></p>
+                    <p><b>TODAY</b><span>$3.92</span></p>
+                </div>
             </div>
             <div id="texas" class="data">
-                <p><b>MISERY INDEX</b><span>$730.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.59</span></p>
-                <p><b>LAST MONTH</b><span>$3.86</span></p>
-                <p><b>LAST WEEK</b><span>$3.83</span></p>
-                <p><b>TODAY</b><span>$3.75</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$730.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.59</span></p>
+                    <p><b>LAST MONTH</b><span>$3.86</span></p>
+                    <p><b>LAST WEEK</b><span>$3.83</span></p>
+                    <p><b>TODAY</b><span>$3.75</span></p>
+                </div>
             </div>
             <div id="utah" class="data">
-                <p><b>MISERY INDEX</b><span>$803.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.18</span></p>
-                <p><b>LAST MONTH</b><span>$4.01</span></p>
-                <p><b>LAST WEEK</b><span>$4.43</span></p>
-                <p><b>TODAY</b><span>$4.51</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$803.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.18</span></p>
+                    <p><b>LAST MONTH</b><span>$4.01</span></p>
+                    <p><b>LAST WEEK</b><span>$4.43</span></p>
+                    <p><b>TODAY</b><span>$4.51</span></p>
+                </div>
             </div>
             <div id="vermont" class="data">
-                <p><b>MISERY INDEX</b><span>$683.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.79</span></p>
-                <p><b>LAST MONTH</b><span>$4.18</span></p>
-                <p><b>LAST WEEK</b><span>$4.21</span></p>
-                <p><b>TODAY</b><span>$4.14</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$683.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.79</span></p>
+                    <p><b>LAST MONTH</b><span>$4.18</span></p>
+                    <p><b>LAST WEEK</b><span>$4.21</span></p>
+                    <p><b>TODAY</b><span>$4.14</span></p>
+                </div>
             </div>
             <div id="virgina" class="data">
-                <p><b>MISERY INDEX</b><span>$728.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.72</span></p>
-                <p><b>LAST MONTH</b><span>$4.10</span></p>
-                <p><b>LAST WEEK</b><span>$4.08</span></p>
-                <p><b>TODAY</b><span>$4.01</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$728.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.72</span></p>
+                    <p><b>LAST MONTH</b><span>$4.10</span></p>
+                    <p><b>LAST WEEK</b><span>$4.08</span></p>
+                    <p><b>TODAY</b><span>$4.01</span></p>
+                </div>
             </div>
             <div id="washington" class="data">
-                <p><b>MISERY INDEX</b><span>$575.00</span></p>
-                <p><b>LAST YEAR</b><span>$3.34</span></p>
-                <p><b>LAST MONTH</b><span>$4.55</span></p>
-                <p><b>LAST WEEK</b><span>$4.72</span></p>
-                <p><b>TODAY</b><span>$4.69</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$575.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$3.34</span></p>
+                    <p><b>LAST MONTH</b><span>$4.55</span></p>
+                    <p><b>LAST WEEK</b><span>$4.72</span></p>
+                    <p><b>TODAY</b><span>$4.69</span></p>
+                </div>
             </div>
             <div id="westVirgina" class="data">
-                <p><b>MISERY INDEX</b><span>$841.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.75</span></p>
-                <p><b>LAST MONTH</b><span>$3.99</span></p>
-                <p><b>LAST WEEK</b><span>$4.06</span></p>
-                <p><b>TODAY</b><span>$4.03</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$841.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.75</span></p>
+                    <p><b>LAST MONTH</b><span>$3.99</span></p>
+                    <p><b>LAST WEEK</b><span>$4.06</span></p>
+                    <p><b>TODAY</b><span>$4.03</span></p>
+                </div>
             </div>
             <div id="wisconsin" class="data">
-                <p><b>MISERY INDEX</b><span>$637.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.74</span></p>
-                <p><b>LAST MONTH</b><span>$3.94</span></p>
-                <p><b>LAST WEEK</b><span>$3.90</span></p>
-                <p><b>TODAY</b><span>$3.80</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$637.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.74</span></p>
+                    <p><b>LAST MONTH</b><span>$3.94</span></p>
+                    <p><b>LAST WEEK</b><span>$3.90</span></p>
+                    <p><b>TODAY</b><span>$3.80</span></p>
+                </div>
             </div>
             <div id="wyoming" class="data">
-                <p><b>MISERY INDEX</b><span>$1,114.00</span></p>
-                <p><b>LAST YEAR</b><span>$2.91</span></p>
-                <p><b>LAST MONTH</b><span>$3.84</span></p>
-                <p><b>LAST WEEK</b><span>$4.12</span></p>
-                <p><b>TODAY</b><span>$4.10</span></p>
+                <p class="content-misery"><b>MISERY INDEX</b>$1,114.00</p>
+                <div class="content-right">
+                    <p><b>LAST YEAR</b><span>$2.91</span></p>
+                    <p><b>LAST MONTH</b><span>$3.84</span></p>
+                    <p><b>LAST WEEK</b><span>$4.12</span></p>
+                    <p><b>TODAY</b><span>$4.10</span></p>
+                </div>
             </div>
         </div>
     </div>
