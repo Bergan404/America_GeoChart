@@ -164,12 +164,12 @@
 
         <div class="content">
             <div id="alabama" class="data">
-                <p class="content-misery"><b>MISERY INDEX</b>$867.00</p>
+                <p class="content-misery"><b>MISERY INDEX</b><span id="alabama-numbers1">$</span></p>
                 <div class="content-right">
-                    <p><b>LAST YEAR</b><span>$2.65</span></p>
-                    <p><b>LAST MONTH</b><span>$3.98</span></p>
-                    <p><b>LAST WEEK</b><span>$3.98</span></p>
-                    <p><b>TODAY</b><span>$3.90</span></p>
+                    <p><b>LAST YEAR</b><span id="alabama-numbers2">$</span></p>
+                    <p><b>LAST MONTH</b><span id="alabama-numbers3">$</span></p>
+                    <p><b>LAST WEEK</b><span id="alabama-numbers4">$</span></p>
+                    <p><b>TODAY</b><span id="alabama-numbers5">$</span></p>
                 </div>
             </div>
             <div id="alaska" class="data">
@@ -618,6 +618,20 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
+        const alabama = [867.00 , 3.14,	4.73,	4.72,	4.67];
+        document.getElementById('alabama-numbers1').innerHTML += alabama[0];
+        document.getElementById('alabama-numbers2').innerHTML += alabama[1];
+        document.getElementById('alabama-numbers3').innerHTML += alabama[2];
+        document.getElementById('alabama-numbers4').innerHTML += alabama[3];
+        document.getElementById('alabama-numbers5').innerHTML += alabama[4];
+
+        const  = [];
+        document.getElementById('-numbers1').innerHTML += [0];
+        document.getElementById('-numbers2').innerHTML += [1];
+        document.getElementById('-numbers3').innerHTML += [2];
+        document.getElementById('-numbers4').innerHTML += [3];
+        document.getElementById('-numbers5').innerHTML += [4];
+
         $(document).ready(function () {
             $("#name").on('change', function () {
                 $(".data").hide();
