@@ -108,7 +108,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <div class="menu">
             <select id="name">
                 <option value="alabama">Alabama</option>
@@ -616,9 +616,21 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div>
+        <!-- mobile Iframe View -->
+        <div style="width: 416px; height: 567px; overflow: hidden; margin-left: auto; margin-right: auto;">
+            <iframe src="https://gasolinemiseryindex.com/?page_id=206" scrolling="no" style="width: 412px; height: 1694px; margin-top: -31px; margin-left: 3px; border: none;"></iframe>
+        </div>
+
+        <!-- Desktop Iframe View -->
+        <div style="width: 100%; height: 100vh; overflow: hidden;">
+            <iframe src="https://gasolinemiseryindex.com/?page_id=206" scrolling="no" style="border: none; width: 100%; height: 100%;"></iframe>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" width="100"></script>
+
     <script>
 
         // When Updating the Numbers just copy and paste the values
@@ -682,7 +694,7 @@
 
         // Misery Index
         const miseryIndex = [
-            825,
+            825.00,
             661,
             769,
             670,
@@ -935,6 +947,7 @@
         document.getElementById('gasPrice198').innerHTML += gasPrice[197];
         document.getElementById('gasPrice199').innerHTML += gasPrice[198];
         document.getElementById('gasPrice200').innerHTML += gasPrice[199];
+
 
         // Misery index in HTML
         document.getElementById('miseryIndex').innerHTML += miseryIndex[0];
